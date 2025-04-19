@@ -9,7 +9,7 @@ import com.ionecar.mapper.CarMapper;
 @Service
 @RequiredArgsConstructor
 public class CarService {
-    private final CarMapper carMapper;
+    private final CarMapper carMapper; //test
 
     public List<Car> getAllCars() {
         return carMapper.findAll();
