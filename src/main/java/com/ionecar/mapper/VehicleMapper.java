@@ -10,7 +10,7 @@ import com.ionecar.domain.VehicleDto;
 
 @Mapper
 public interface VehicleMapper {
-    List<Vehicle> findAllVehicles();
+    List<Vehicle> findAllVehicles(); 
 
     //List<VehicleOption> findOptionsByVehicleId(String vehicleId);
 
