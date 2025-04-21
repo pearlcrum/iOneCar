@@ -6,6 +6,8 @@ import com.ionecar.domain.Customer;
 
 @Mapper
 public interface CustomerMapper {
-    @Select("SELECT * FROM customers WHERE edps_csn = #{edpsCsn}")
-    Customer findById(String edpsCsn);
+  
+    Customer findCustomerByEdpsCsn(String edpsCsn);
 }
+
+

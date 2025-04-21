@@ -3,8 +3,9 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.ionecar.mapper.CustomerMapper">
-    <insert id="insertCustomer">
-        INSERT INTO customers (edps_csn, name, phone, address)
-        VALUES (#{edpsCsn}, #{name}, #{phone}, #{address})
-    </insert>
+
+    <select id="findCustomerByEdpsCsn" resultType="com.ionecar.domain.Customer">
+        SELECT * FROM customers WHERE edps_csn = #{edpsCsn}
+    </select>
+
 </mapper>
