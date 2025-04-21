@@ -9,7 +9,7 @@ import java.time.LocalDateTime; // Car.java에 필요
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    private Long id;
+    private Long id; //id
     private String username;
     private String password;
     private boolean enabled;
